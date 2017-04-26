@@ -38,9 +38,9 @@ namespace Click2Cloud.Samples.AspNetCore.MvcSQLDb
         {
             get
             {
-                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("MSSQL_SERVICE_HOST")))
+                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("SQLDB_SERVER")))
                 {
-                    return Environment.GetEnvironmentVariable("MSSQL_SERVICE_HOST");
+                    return Environment.GetEnvironmentVariable("SQLDB_SERVER");
                 }
 
                 return string.Empty;
@@ -64,9 +64,9 @@ namespace Click2Cloud.Samples.AspNetCore.MvcSQLDb
         {
             get
             {
-                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("SA_PASSWORD")))
+                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("SQLDB_PASSWORD")))
                 {
-                    return Environment.GetEnvironmentVariable("SA_PASSWORD");
+                    return Environment.GetEnvironmentVariable("SQLDB_PASSWORD");
                 }
 
                 return string.Empty;
@@ -90,9 +90,9 @@ namespace Click2Cloud.Samples.AspNetCore.MvcSQLDb
         {
             get
             {
-                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("MSSQL_SERVICE_PORT")))
+                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("SQLDB_PORT")))
                 {
-                    return Environment.GetEnvironmentVariable("MSSQL_SERVICE_PORT");
+                    return Environment.GetEnvironmentVariable("SQLDB_PORT");
                 }
 
                 return string.Empty;
